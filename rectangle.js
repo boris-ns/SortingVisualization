@@ -22,8 +22,8 @@ class Rectangle {
     }
 
     /* Updates the values of class after moving object in array of rectangles */
-    updateData(value) {
-        this.y = 600 - value; // @TODO: This is bad, use CANVAS_HEIGHT somehow ??!
+    updateData(value, canvasHeight) {
+        this.y = canvasHeight - value; 
         this.value  = value;
         this.height = value;
     }
